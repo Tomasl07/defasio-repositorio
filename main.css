@@ -10,11 +10,6 @@
     "header header nav"
     "main main main"
     "footer footer footer"
-    
-    
-    
-    
-    
     ;
 
 
@@ -59,7 +54,7 @@ nav{
 
 /* ------------------------------------------------------------- */
 
-/* main{
+main{
     height: 20em;
     background-color: yellow;
 }
