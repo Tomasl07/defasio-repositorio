@@ -1,9 +1,207 @@
 .maindiv{
-    /* Estilando mi grilla */
-    display: grid;
+  /* background-color: #ffda9e; */
+  
+  /* Estilos de grilla */
+  display: grid;
+  /* grid-template-columns: 1fr; */
+  /* grid-template-rows: 1fr; */
+  grid-template-areas: 
+  "header"
+  "nav"
+  "main"
+  "footer"
+  ;
+  
+}
+
+/* estilando mi header */
+header{
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+
+  height: 10vh;
+
+  background-color: #c5c6c8;
+}
+nav{
+grid-area: nav;
+background-color: #c5c6c8;
+}
+.titulopag{
+font-family: 'Oswald', sans-serif;
+}  
+.ulbotones li{
+  display: inline-block;
+
+  padding: 20px;
+}
+main{
+  grid-area: main;
+  background-color: #ffda9e;
+}
+.titulomain{
+text-align: start;
+font-family: 'Libre Bodoni', serif;
+}
+.div1{
+display: flex;
+flex-direction: column;
+}
+.subdesc{
+border: solid black 1px;
+margin: 5px;
+padding: 5px;
+height: 300px;
+
+
+background-color: #c5c6c8;
+}
+
+.clientes{
+text-align: center;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.reseñaprueba{
+display: flex;
+flex-direction: column;
+}
+.reseña{
+border: solid black 1px;
+margin: 5px;
+padding: 5px;
+height: 200px;
+}
+.reseña h1{
+text-align: center;
+font-size: 24px;
+} 
+
+
+footer{
+  grid-area: footer;
+  background-color: #fdf9c4;
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer ul{
+  list-style-type: none;
+}
+.footer li a{
+  text-decoration: none;
+}
+.lista1 a{
+  font-size: 30px;
+  border: solid black 1px;
+  padding: 10px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  border-radius: 15px;
+  background-color: black;
+  
+}
+.lista2{
+  font-size: 30px;
+  margin-right: 35px;
+  border-left: black solid 2px;
+  cursor: pointer;
+  
+}
+.lista2 li{
+  padding: 10px;
+}
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 769px){
+  .maindiv{
+    /* Estilos de grilla */
     grid-template-columns: 1fr 1fr;
     grid-template-rows:  1fr;
     grid-template-areas: 
@@ -11,115 +209,35 @@
     "main main main"
     "footer footer footer"
     ;
-
-
-
 }
+  /* estilando mi header */
 header{
-    grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+
+  height: 10vh;
+
+
+
+  background-color: #c5c6c8;
 }
-nav{
-    grid-area: nav;
+ /* Media de main */
+.div1{
+  display: flex;
+  flex-direction: row;
 }
-main{
-    grid-area: main;
+.reseñaprueba{
+  display: flex;
+  flex-direction: row;
 }
-footer{
-    grid-area: footer;
+.reseña{
+  border: solid black 1px;
+  margin: 5px;
+  padding: 5px;
+  height: 200px;
 }
-
-/* ------------------------------------------------------------- */
-
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-
-    height: 10vh;
-
-    background-color: #c5c6c8;
-}
-nav{
-    background-color: #c5c6c8;
-}
-.titulopag{
-    font-family: 'Oswald', sans-serif;
-  }  
-.ulbotones li{
-    display: inline-block;
-  
-    padding: 20px;
-}
-
-/* ------------------------------------------------------------- */
-
-main{
-    height: 20em;
-    background-color: yellow;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ------------------------------------------------------------- */
-footer{
-    grid-area: footer;
-    background-color: #fdf9c4;
-}
-.footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.footer ul{
-    list-style-type: none;
-}
-.footer li a{
-    text-decoration: none;
-}
-.lista1 a{
-    font-size: 30px;
-    border: solid black 1px;
-    padding: 10px;
-    cursor: pointer;
-    color: rgb(255, 255, 255);
-    border-radius: 15px;
-    background-color: black;
-    
-}
-.lista2{
-    font-size: 30px;
-    margin-right: 35px;
-    border-left: black solid 2px;
-    cursor: pointer;
-    
-}
-.lista2 li{
-    padding: 10px;
-} */
-
-
-
-
 
 
 
@@ -344,6 +462,7 @@ footer{
         border: #7c6369 solid 1px;
         background: #9c9eaa;  
     }
+  }
 
 
 
