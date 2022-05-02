@@ -186,6 +186,13 @@ footer{
 
 
 
+ 
+
+
+
+
+
+
 
 
 
@@ -290,6 +297,18 @@ footer{
     padding: 5px;
     height: 200px;
   }
+}
+/* Media quienes somos */
+
+
+ /* Media Mudanzas */
+ .mainmud{
+  background-image: url(public/fondo1.jpg);
+  background-size: 100%;
+
+
+  height: 750px;
+  width: 100%;
 }
 
 
