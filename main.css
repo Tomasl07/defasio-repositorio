@@ -30,7 +30,7 @@ nav{
 grid-area: nav;
 background-color: #c5c6c8;
 }
-.titulopag{
+.animate__animated animate__bounce{
 font-family: 'Oswald', sans-serif;
 }  
 .ulbotones li{
