@@ -381,6 +381,14 @@ footer{
 .cuadros{
   display: flex;
   flex-direction: row;
+
+  transition-property: all;
+  transition-duration: .5s;
+
+
+ }
+ .cuadros:hover{
+   transform: scale(2);
  }
 
 
